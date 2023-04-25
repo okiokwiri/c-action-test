@@ -6,9 +6,8 @@ on: [push]
 
 #Jobs run in parallel by dafault, each runs steps in sequence
 jobs:
-# Job to print something out
-	say-hello:
-		runs-on: ubuntu-latest
-		steps:
-			-run: echo "Hello, Github Actions!"
+    say-hello:
+        runs-on: ubuntu-latest
+        steps:
+          - run: echo "Hello, Github Actions!"
 			
